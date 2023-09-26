@@ -1,0 +1,53 @@
+
+<div class="container my_container">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title text-uppercase text-center">
+        Remplir le formulaire
+      </h4>
+    </div>
+    <div class="card-body">
+      <div class="alert alert-danger" *ngIf="errorBackendMessage">
+        {{errorBackendMessage}}
+      </div>
+
+      <!--      <p class="card-text">-->
+      <!--        Some quick example text to build on the card title and make up the bulk of the card's content.-->
+      <!--      </p>-->
+
+      <!--      We can add the connexion form here-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><strong>@</strong></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username"
+               id="username" name="username"
+               aria-label="Username" aria-describedby="basic-addon1"
+               [(ngModel)] = "authRequestClient.login">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-key"></i></span>
+        </div>
+        <input type="password" class="form-control" placeholder=""
+               id="password" name="password"
+               aria-label="Password" aria-describedby="basic-addon2"
+               [(ngModel)] = "authRequestClient.password">
+      </div>
+
+
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-link">
+          <i class="fa-solid fa-wrench"></i>
+          Mot de passe oublie?
+        </button>
+        <button type="button" class="btn btn-primary" (click)="onLogin()">
+          <i class="fa-solid fa-key"></i>
+          Se connecter
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

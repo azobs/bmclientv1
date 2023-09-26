@@ -1,0 +1,42 @@
+<!--<div class="row">-->
+<!--  <div class="col col-md-2">-->
+<!--    <img src="favicon.ico" alt="Connected user"/>-->
+<!--  </div>-->
+<!--  <div class="col col-md-10">-->
+<!--    <div class="card">-->
+<!--      <ul class="list-group list-group-flush">-->
+<!--        <li class="list-group-item">Username:</li>-->
+<!--        <li class="list-group-item">Point de vente:</li>-->
+<!--        <li class="list-group-item">Date de derniere connexion:</li>-->
+<!--        <button type="button" class="btn btn-danger">Se deconnecter</button>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="accordion" id="profileMenu">
+  <div class="card" *ngIf="isUserConnected">
+    <div class="card-header">
+      <button class="btn btn-light btn-block text-left" type="button" data-toggle="collapse"
+              [attr.data-target]="'#collapseProfile'" aria-expanded="true" aria-controls="collapseOne">
+        <img src="{{urlImg}}" alt="Connected user"/> Profil de <span>{{username}}</span>
+      </button>
+    </div>
+
+    <div id="collapseProfile" class="collapse" [attr.aria-labelledby]="'collapseProfileContent'" data-parent="#collapseProfile">
+      <div class="card">
+        <ul class="list-group list-group-flush">
+<!--          <li class="list-group-item">Username:</li>-->
+<!--          <li class="list-group-item">Point de vente:</li>-->
+<!--          <li class="list-group-item">Date de derniere connexion:</li>-->
+          <button type="button" class="btn btn-outline-danger">Se deconnecter</button>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+<!--  <div class="card" *ngIf="!isUserConnected">-->
+<!--    &nbsp;<br/>-->
+<!--    <button type="button" class="btn btn-outline-primary">Se connecter</button>-->
+<!--  </div>-->
+</div>
+

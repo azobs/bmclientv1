@@ -1,0 +1,130 @@
+<div class="col">
+  <div class="row m-1">
+    <div class="col-md-8 p-0">
+      <h3>Nouveau point de vente</h3>
+    </div>
+    <div class="col-md-4 text-right">
+      <app-pos-action></app-pos-action>
+    </div>
+  </div>
+  <div class="col m-1">
+    <div class="col-md-12 mb-2">
+      <img src="favicon.ico" class="rounded-circle" width="100px" height="100px"/>
+    </div>
+    <div class="col-md-12 m-0">
+      <div class="col-md-12 m-0 mb-2">
+        <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Informations du point de vente</h2>
+      </div>
+<!--      La zone d'alerte pour les erreurs doit etre ici-->
+      <form>
+        <div class="row">
+          <div class="col-md-4">
+            <!--            Le input du name-->
+            <div class="form-group">
+              <label for="inputPosName"><strong>Nom du point de vente (POS):</strong></label>
+              <input type="text" class="form-control" id="inputPosName" placeholder="">
+            </div>
+            <!--            Le input du acronym-->
+            <div class="form-group">
+              <label for="inputPosAcronym"><strong>Acronym du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosAcronym" placeholder="">
+            </div>
+            <!--            Le input du entreprise-->
+            <div class="form-group">
+              <label for="selectEnt"><strong>Entreprise proprietaire:</strong></label>
+              <select class="form-control" id="selectEnt">
+                <option value="IL">enterprise1</option>
+                <option value="SI">entreprise2</option>
+              </select>
+            </div>
+            <!--            Le input du balance-->
+            <div class="form-group">
+              <label for="posBalance"><strong>Cash initial:</strong></label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="abbreviationMonnaie-addon1">Monnaie</span>
+                </div>
+                <input type="text" class="form-control" placeholder="0" aria-label="posBalance" id="posBalance"
+                       aria-describedby="abbreviationMonnaie">
+              </div>
+            </div>
+            <!--            Le input du currency-->
+            <div class="form-group">
+              <label for="selectCurrency"><strong>Monnaie par defaut:</strong></label>
+              <select class="form-control" id="selectCurrency">
+                <option value="fcfa">fcfa</option>
+                <option value="$">dollard</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--            Le input du description-->
+            <div class="form-group">
+              <label for="inputPosDescription"><strong>Description du POS:</strong></label>
+              <textarea type="text" class="form-control" id="inputPosDescription" placeholder="Breve description du point de vente"></textarea>
+            </div>
+            <!--            Le label de l'adress-->
+            <div class="form-group">
+              <h4>Adresse du POS:</h4>
+            </div>
+            <!--            Le input du email-->
+            <div class="form-group">
+              <label for="inputPosEmail"><strong>Email du POS:</strong></label>
+              <input type="email" class="form-control" id="inputPosEmail" placeholder="">
+            </div>
+            <!--            Le input du numtel1-->
+            <div class="form-group">
+              <label for="inputPosNumtel1"><strong>Numtel1 du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel1" placeholder="">
+            </div>
+            <!--            Le input du numtel2-->
+            <div class="form-group">
+              <label for="inputPosNumtel2"><strong>Numtel2 du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel2" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--            Le input du numtel3-->
+            <div class="form-group">
+              <label for="inputPosNumtel3"><strong>Numtel3 du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel3" placeholder="">
+            </div>
+            <!--            Le input du country-->
+            <div class="form-group">
+              <label for="inputPosCountry"><strong>Pays du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosCountry" placeholder="">
+            </div>
+            <!--            Le input du town-->
+            <div class="form-group">
+              <label for="inputPosTown"><strong>Ville du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosTown" placeholder="">
+            </div>
+            <!--            Le label de quater-->
+            <div class="form-group">
+              <label for="inputPosQuater"><strong>Quartier du POS:</strong></label>
+              <input type="text" class="form-control" id="inputPosQuater" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-danger mr-3">
+              <i class="fas fa-ban"></i>&nbsp;Annuler
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-save"></i>&nbsp;Enregistrer
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row text-center">
+
+  </div>
+</div>
+
+

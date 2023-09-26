@@ -1,0 +1,81 @@
+<div class="col">
+  <div class="row m-1">
+    <div class="col-md-8 p-0">
+      <h3>Nouvel entreprise</h3>
+    </div>
+    <div class="col-md-4 text-right">
+      <app-enterprise-action></app-enterprise-action>
+    </div>
+  </div>
+  <div class="col m-1">
+    <div class="col-md-12 mb-2">
+      <img src="favicon.ico" class="rounded-circle" width="100px" height="100px"/>
+    </div>
+    <div class="col-md-12 m-0">
+      <div class="col-md-12 m-0 mb-2">
+        <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Informations de l'entreprise</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <!--            Le input du Niu-->
+            <div class="form-group">
+              <label for="inputNiu"><strong>Niu (Numero d'Identification Unique):</strong></label>
+              <input type="text" class="form-control" id="inputNiu" placeholder="">
+            </div>
+            <!--            Le input du enterpriseName-->
+            <div class="form-group">
+              <label for="inputName"><strong>Nom complet de l'entreprise:</strong></label>
+              <input type="text" class="form-control" id="inputName" placeholder="">
+            </div>
+            <!--            Le input du enterpriseAcronym-->
+            <div class="form-group">
+              <label for="inputAcronym"><strong>Acronyme de l'entreprise:</strong></label>
+              <input type="text" class="form-control" id="inputAcronym" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!--            Le select du enterpriseRegime-->
+            <div class="form-group">
+              <label for="selectRegime"><strong>Regime de l'entreprise:</strong></label>
+              <select class="form-control" id="selectRegime">
+                <option value="IL">Impot Liberatoire</option>
+                <option value="SI">Simplifie</option>
+                <option value="SARL">Societe a Reponsabilite Limitee</option>
+                <option value="SA">Societe Anonyme</option>
+                <option value="GRP">Groupe</option>
+              </select>
+            </div>
+            <!--            Le input du enterpriseRaisonSociale-->
+            <div class="form-group">
+              <label for="inputRaisonsociale"><strong>Raison sociale de l'entreprise:</strong></label>
+              <input type="text" class="form-control" id="inputRaisonsociale" placeholder="Raison sociale">
+            </div>
+            <!--            Le input du enterpriseDescription-->
+            <div class="form-group">
+              <label for="inputDescription"><strong>Description de l'entreprise:</strong></label>
+              <textarea type="text" class="form-control" id="inputDescription" placeholder="Breve description de l'entreprise"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-danger mr-3">
+              <i class="fas fa-ban"></i>&nbsp;Annuler
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-save"></i>&nbsp;Enregistrer
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row text-center">
+
+  </div>
+</div>
+

@@ -1,0 +1,129 @@
+<div class="col">
+  <div class="row m-1">
+    <div class="col-md-8 p-0">
+      <h3>Nouvel utilisateur</h3>
+    </div>
+    <div class="col-md-4 text-right">
+      <app-users-action></app-users-action>
+    </div>
+  </div>
+  <div class="col m-1">
+    <div class="col-md-12 mb-2">
+      <img src="favicon.ico" class="rounded-circle" width="100px" height="100px"/>
+    </div>
+    <div class="col-md-12 m-0">
+      <div class="col-md-12 m-0 mb-2">
+        <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Informations sur l'utilisateur</h2>
+      </div>
+      <!--      La zone d'alerte pour les erreurs doit etre ici-->
+      <form>
+        <div class="row">
+          <div class="col-md-4">
+            <!--            Label information personnel-->
+            <div class="form-group">
+              <h4>Informations personnelles:</h4>
+            </div>
+            <!--            Le input de username-->
+            <div class="form-group">
+              <label for="inputUsername"><strong>Nom de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputUsername" placeholder="">
+            </div>
+            <!--            Le input du user surname-->
+            <div class="form-group">
+              <label for="inputUsersurname"><strong>Prenom de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputUsersurname" placeholder="">
+            </div>
+            <!--            Le input du date of birth-->
+            <div class="form-group">
+              <label for="inputUserdob"><strong>Date de naissance de l'utilisateur:</strong></label>
+              <input type="date" pattern="\d{4}-\d{2}-\d{2}" class="form-control" id="inputUserdob" placeholder="">
+            </div>
+            <!--            Le input du cni-->
+            <div class="form-group">
+              <label for="inputUsercni"><strong>Numero de CNI de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputUsercni" placeholder="">
+            </div>
+            <!--            Le label de country-->
+            <div class="form-group">
+              <label for="inputPosCountry"><strong>Pays de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosCountry" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--            Le label des infos de connexion-->
+            <div class="form-group">
+              <h4>Informations de connexion:</h4>
+            </div>
+            <!--            Le input du login-->
+            <div class="form-group">
+              <label for="inputUserlogin"><strong>Login de connexion:</strong></label>
+              <input type="text" class="form-control" id="inputUserlogin" placeholder="">
+            </div>
+            <!--            Le input du email-->
+            <div class="form-group">
+              <label for="inputUseremail"><strong>Email de connexion:</strong></label>
+              <input type="email" class="form-control" id="inputUseremail" placeholder="">
+            </div>
+            <!--            Le input du password-->
+            <div class="form-group">
+              <label for="inputUserpassword"><strong>Mot de passe:</strong></label>
+              <input type="password" class="form-control" id="inputUserpassword" placeholder="">
+            </div>
+            <!--            Le input du repassword-->
+            <div class="form-group">
+              <label for="inputUserRepassword"><strong>Repeter le mot de passe:</strong></label>
+              <input type="password" class="form-control" id="inputUserRepassword" placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <h4>Adresse de l'utilisateur:</h4>
+            </div>
+            <!--            Le input du numtel1-->
+            <div class="form-group">
+              <label for="inputPosNumtel1"><strong>Numtel1 de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel1" placeholder="">
+            </div>
+            <!--            Le input du numtel2-->
+            <div class="form-group">
+              <label for="inputPosNumtel2"><strong>Numtel2 de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel2" placeholder="">
+            </div>
+            <!--            Le input du numtel3-->
+            <div class="form-group">
+              <label for="inputPosNumtel3"><strong>Numtel3 de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosNumtel3" placeholder="">
+            </div>
+            <!--            Le input du quater-->
+            <div class="form-group">
+              <label for="inputPosQuater"><strong>Quartier de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosQuater" placeholder="">
+            </div>
+            <!--            Le input du town-->
+            <div class="form-group">
+              <label for="inputPosTown"><strong>Ville de l'utilisateur:</strong></label>
+              <input type="text" class="form-control" id="inputPosTown" placeholder="">
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-danger mr-3">
+              <i class="fas fa-ban"></i>&nbsp;Annuler
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-save"></i>&nbsp;Enregistrer
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row text-center">
+
+  </div>
+</div>
