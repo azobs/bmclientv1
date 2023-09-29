@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-product-action',
@@ -7,7 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ProductActionComponent {
 
-  loadNewProductPage() {
+  constructor(
+    private router: Router
+  ) {
+  }
 
+
+  loadNewProductPage() {
+    this.router.navigate(['new-product-page']);
   }
 }

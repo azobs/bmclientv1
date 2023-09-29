@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pos-action',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class PosActionComponent {
 
+  constructor(
+    private router: Router
+  ) {
+  }
+  loadNewPosPage() {
+    this.router.navigate(['new-pos-page']);
+  }
 }

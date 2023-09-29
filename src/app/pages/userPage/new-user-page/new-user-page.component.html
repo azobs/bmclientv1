@@ -9,7 +9,10 @@
   </div>
   <div class="col m-1">
     <div class="col-md-12 mb-2">
-      <img src="favicon.ico" class="rounded-circle" width="100px" height="100px"/>
+      <button style="background-color: transparent; border: none" (click)="userPictureFile.click()">
+        <img [src]="userPictureUrl" class="rounded-circle" width="120px" height="100px"/>
+        <input hidden="" type="file" #userPictureFile (change)="onUserChangePictureFile(userPictureFile.files)" name="userPictureFile"/>
+      </button>
     </div>
     <div class="col-md-12 m-0">
       <div class="col-md-12 m-0 mb-2">
@@ -26,27 +29,32 @@
             <!--            Le input de username-->
             <div class="form-group">
               <label for="inputUsername"><strong>Nom de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputUsername" placeholder="">
+              <input type="text" class="form-control" id="inputUsername" placeholder="" name="inputUsername"
+                     [(ngModel)] = "userbmToSave.userName">
             </div>
             <!--            Le input du user surname-->
             <div class="form-group">
               <label for="inputUsersurname"><strong>Prenom de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputUsersurname" placeholder="">
+              <input type="text" class="form-control" id="inputUsersurname" name="inputUsersurname" placeholder=""
+                     [(ngModel)] = "userbmToSave.userSurname">
             </div>
             <!--            Le input du date of birth-->
             <div class="form-group">
               <label for="inputUserdob"><strong>Date de naissance de l'utilisateur:</strong></label>
-              <input type="date" pattern="\d{4}-\d{2}-\d{2}" class="form-control" id="inputUserdob" placeholder="">
+              <input type="date" pattern="\d{4}-\d{2}-\d{2}" class="form-control" id="inputUserdob" name="inputUserdob" placeholder=""
+                     [(ngModel)] = "userbmToSave.userDob">
             </div>
             <!--            Le input du cni-->
             <div class="form-group">
               <label for="inputUsercni"><strong>Numero de CNI de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputUsercni" placeholder="">
+              <input type="text" class="form-control" id="inputUsercni" name="inputUsercni" placeholder=""
+                     [(ngModel)] = "userbmToSave.userCni">
             </div>
             <!--            Le label de country-->
             <div class="form-group">
               <label for="inputPosCountry"><strong>Pays de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosCountry" placeholder="">
+              <input type="text" class="form-control" id="inputPosCountry" name="inputPosCountry" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.country">
             </div>
           </div>
           <div class="col-md-4">
@@ -57,22 +65,26 @@
             <!--            Le input du login-->
             <div class="form-group">
               <label for="inputUserlogin"><strong>Login de connexion:</strong></label>
-              <input type="text" class="form-control" id="inputUserlogin" placeholder="">
+              <input type="text" class="form-control" id="inputUserlogin" name="inputUserlogin" placeholder=""
+                     [(ngModel)] = "userbmToSave.userLogin">
             </div>
             <!--            Le input du email-->
             <div class="form-group">
               <label for="inputUseremail"><strong>Email de connexion:</strong></label>
-              <input type="email" class="form-control" id="inputUseremail" placeholder="">
+              <input type="email" class="form-control" id="inputUseremail" name="inputUseremail" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.email">
             </div>
             <!--            Le input du password-->
             <div class="form-group">
               <label for="inputUserpassword"><strong>Mot de passe:</strong></label>
-              <input type="password" class="form-control" id="inputUserpassword" placeholder="">
+              <input type="password" class="form-control" id="inputUserpassword" name="inputUserpassword" placeholder=""
+                     [(ngModel)] = "userbmToSave.userPassword">
             </div>
             <!--            Le input du repassword-->
             <div class="form-group">
               <label for="inputUserRepassword"><strong>Repeter le mot de passe:</strong></label>
-              <input type="password" class="form-control" id="inputUserRepassword" placeholder="">
+              <input type="password" class="form-control" id="inputUserRepassword" name="inputUserRepassword" placeholder=""
+                     [(ngModel)] = "userbmToSave.userRepassword">
             </div>
           </div>
           <div class="col-md-4">
@@ -82,27 +94,32 @@
             <!--            Le input du numtel1-->
             <div class="form-group">
               <label for="inputPosNumtel1"><strong>Numtel1 de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosNumtel1" placeholder="">
+              <input type="text" class="form-control" id="inputPosNumtel1" name="inputPosNumtel1" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.numtel1">
             </div>
             <!--            Le input du numtel2-->
             <div class="form-group">
               <label for="inputPosNumtel2"><strong>Numtel2 de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosNumtel2" placeholder="">
+              <input type="text" class="form-control" id="inputPosNumtel2" name="inputPosNumtel2" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.numtel2">
             </div>
             <!--            Le input du numtel3-->
             <div class="form-group">
               <label for="inputPosNumtel3"><strong>Numtel3 de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosNumtel3" placeholder="">
+              <input type="text" class="form-control" id="inputPosNumtel3" name="inputPosNumtel3" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.numtel3">
             </div>
             <!--            Le input du quater-->
             <div class="form-group">
               <label for="inputPosQuater"><strong>Quartier de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosQuater" placeholder="">
+              <input type="text" class="form-control" id="inputPosQuater" name="inputPosQuater" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.quarter">
             </div>
             <!--            Le input du town-->
             <div class="form-group">
               <label for="inputPosTown"><strong>Ville de l'utilisateur:</strong></label>
-              <input type="text" class="form-control" id="inputPosTown" placeholder="">
+              <input type="text" class="form-control" id="inputPosTown" name="inputPosTown" placeholder=""
+                     [(ngModel)] = "userbmAddressToSave.town">
             </div>
 
           </div>
@@ -115,7 +132,7 @@
             <button type="button" class="btn btn-danger mr-3">
               <i class="fas fa-ban"></i>&nbsp;Annuler
             </button>
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-primary" (click)="launchSaveUserbm()">
               <i class="fas fa-save"></i>&nbsp;Enregistrer
             </button>
           </div>

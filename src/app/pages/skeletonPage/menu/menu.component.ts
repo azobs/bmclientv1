@@ -30,21 +30,21 @@ export class MenuComponent implements OnInit{
               id: "12",
               title: "Devises",
               icon:"fa-solid fa-regular fa-coins",
-              url:"",
+              url:"devises",
               visible:true
             },
             {
               id: "13",
               title: "Statistiques",
               icon:"fa-solid fa-chart-simple",
-              url:"",
+              url:"stats",
               visible:true
             },
             {
               id: "14",
               title: "Utilisateurs",
               icon:"fa-solid fa-users-line",
-              url:"",
+              url:"users",
               visible:true
             }
           ]
@@ -61,14 +61,14 @@ export class MenuComponent implements OnInit{
               id: "21",
               title: "Categories",
               icon:"fa-solid fa-list",
-              url:"",
+              url:"categories",
               visible:true
             },
             {
               id: "22",
               title: "Produits",
               icon:"fa-solid fa-gear",
-              url:"",
+              url:"products",
               visible:true
             },
             {
@@ -117,14 +117,14 @@ export class MenuComponent implements OnInit{
               id: "29",
               title: "Point de vente",
               icon:"fa-solid fa-cart-shopping",
-              url:"",
+              url:"pos",
               visible:true
             }
           ]
       },
       {
         id: "3",
-        title: "Provision",
+        title: "Arrivage",
         icon:"fa-solid fa-boxes-stacked",
         url:"",
         visible:true,

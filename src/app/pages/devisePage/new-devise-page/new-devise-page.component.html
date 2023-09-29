@@ -1,1 +1,57 @@
-<p>new-devise-page works!</p>
+<div class="col">
+  <div class="row m-1">
+    <div class="col-md-8 p-0">
+      <h3>Nouvelle devise</h3>
+    </div>
+    <div class="col-md-4 text-right">
+      <app-devise-action></app-devise-action>
+    </div>
+  </div>
+  <div class="col m-1">
+    <div class="col-md-12 mb-2">
+
+    </div>
+    <div class="col-md-12 m-0">
+      <div class="col-md-12 m-0 mb-2">
+        <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Informations de la devise</h2>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <!--            Le input du CurrencyName-->
+            <div class="form-group">
+              <label for="inputCurrencyName"><strong>Appelation complete de devise:</strong></label>
+              <input type="text" class="form-control" id="inputCurrencyName" name="inputCurrencyName" placeholder="">
+            </div>
+            <!--            Le input du currencyAbbreviation-->
+            <div class="form-group">
+              <label for="inputCurrencyAbbreviation"><strong>Abbreviation de la devise:</strong></label>
+              <input type="text" class="form-control" id="inputCurrencyAbbreviation" name="inputCurrencyAbbreviation" placeholder="">
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-danger mr-3">
+              <i class="fas fa-ban"></i>&nbsp;Annuler
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-save"></i>&nbsp;Enregistrer
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row text-center">
+
+  </div>
+</div>
+
